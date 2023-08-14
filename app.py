@@ -49,12 +49,5 @@ def process():
     # Extracted matching skills and relevance from response
     matching_skills_and_relevance = response_analyze.choices[0].text.strip()
 
- 
-
     # Render results template with extracted data
     return render_template('results.html', matching_skills_report=matching_skills_report, matching_skills_and_relevance=matching_skills_and_relevance)
-
-if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=80)
-
-
