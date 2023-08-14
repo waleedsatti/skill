@@ -55,4 +55,5 @@ def process():
     return render_template('results.html', matching_skills_report=matching_skills_report, matching_skills_and_relevance=matching_skills_and_relevance)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+app.run(host='0.0.0.0', port=80)
+
